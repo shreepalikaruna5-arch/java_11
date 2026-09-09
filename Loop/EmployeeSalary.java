@@ -5,11 +5,10 @@ public class EmployeeSalary{
         Scanner sc = new Scanner(System.in);
 
         for(int i = 1; i<=8; i++){
-            System.out.print("Enter salary of employee" + i + ":");
+            System.out.print("Enter salary of employee " + i + ":");
             double salary = sc.nextDouble();
 
             double bonusRate;
-
             if(salary < 20000){
                  bonusRate = 0.20;
             }
