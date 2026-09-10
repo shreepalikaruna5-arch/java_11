@@ -11,23 +11,21 @@ In main(), create two Book objects using the constructor and display their infor
     String title;
     String author;
 
-    public BOOK(int bookId, String title, String author){
+    public Book(int bookId, String title, String author){
         this.bookId = bookId;
         this.title = title;
         this.author = author;
     }
     public void displayInformation(){
-        System.out.println("BookI d " + bookId);
+        System.out.println("BookId " + bookId);
         System.out.println("Title" + title);
         System.out.println("Author " + author);
     }
 
  }
- public class Main{
+ public class Bookie{
     public static void main(String[] args){
-        Book Book1 = new (1, "Last Twilight", "JimmySea");
-        Book1.displayInformation();
-        Book Book2 = new (2, "You Maniac", "WilliamEst");
-        Book2.displayInformation();
+        Book Book1 = new Book(1, "Last Twilight", "JimmySea");
+        Book1.displayInformation();    
     }
  }
